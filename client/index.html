@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Tagesschrift&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SSH!</title>
+  </head>
+  <body>
+    <h1 class="secretSpillerTitle">Secret Spiller</h1>
+
+    <form id="secretForm" class="secretForm">
+      <fieldset>
+        <legend>Go on...</legend>
+
+        <label for="alias">Alias: </label>
+        <input type="text" name="alias" class="alias" required />
+
+        <label for="secrettype">For whom should we be concerned? : </label>
+        <select name="secrettype" class="secrettype" required>
+          <option value="" selected hidden>
+            I'm betraying the confidence of:
+          </option>
+          <option value="friend">a friend</option>
+          <option value="partner">a partner</option>
+          <option value="family">a family member</option>
+          <option value="colleague">a colleague</option>
+          <option value="idek">I don't even know them!</option>
+        </select>
+
+        <label for="secret">Your Secret: </label>
+        <input type="text" name="secret" class="secret" required />
+
+        <button type="submit">...Spill!</button>
+      </fieldset>
+    </form>
+
+    <section id="secretDisplay" class="secretDisplay">
+      <h2>All secrets!</h2>
+    </section>
+  </body>
+</html>

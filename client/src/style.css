@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: papayawhip;
+}
+
+.secretSpillerTitle {
+  display: flex;
+  justify-content: center;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.secretForm fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+input[type="text"]:focus {
+  border: 3px solid red;
+  border-radius: 5px;
+}
+
+.alias {
+  width: 60%;
+}
+
+.secrettype {
+  width: 60%;
+}
+
+.secret {
+  width: 100%;
+}
+
+.button {
+}
+
+.secretDisplay {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.document.alias {
+  justify-content: center;
+}
+
+.jim-nightshade-regular {
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.tagesschrift-regular {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 800px) {
+}
